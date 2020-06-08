@@ -10,7 +10,7 @@ fn test_on_the_hour() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_past_the_hour() {
     assert_eq!(Clock::new(11, 9).to_string(), "11:09");
 }
