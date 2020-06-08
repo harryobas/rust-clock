@@ -70,7 +70,7 @@ fn test_hours_and_minutes_roll_over_to_exactly_midnight() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_negative_hour() {
     assert_eq!(Clock::new(-1, 15).to_string(), "23:15");
 }
