@@ -16,7 +16,7 @@ fn test_past_the_hour() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_midnight_is_zero_hours() {
     assert_eq!(Clock::new(24, 0).to_string(), "00:00");
 }
