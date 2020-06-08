@@ -128,14 +128,14 @@ fn test_negative_hour_and_minutes_both_roll_over_continuously() {
 //
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_add_minutes() {
     let clock = Clock::new(10, 0).add_minutes(3);
     assert_eq!(clock.to_string(), "10:03");
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_add_no_minutes() {
     let clock = Clock::new(6, 41).add_minutes(0);
     assert_eq!(clock.to_string(), "06:41");
