@@ -47,7 +47,7 @@ impl fmt::Display for Clock {
     }
 }
 
-struct TimeNormalizer;
+//struct TimeNormalizer;
 
 impl TimeNormalizer {
 
