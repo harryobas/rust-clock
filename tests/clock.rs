@@ -142,21 +142,21 @@ fn test_add_no_minutes() {
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_add_to_next_hour() {
     let clock = Clock::new(0, 45).add_minutes(40);
     assert_eq!(clock.to_string(), "01:25");
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_add_more_than_one_hour() {
     let clock = Clock::new(10, 0).add_minutes(61);
     assert_eq!(clock.to_string(), "11:01");
 }
 
 #[test]
-#[ignore]
+//#[ignore]
 fn test_add_more_than_two_hours_with_carry() {
     let clock = Clock::new(0, 45).add_minutes(160);
     assert_eq!(clock.to_string(), "03:25");
